@@ -6,11 +6,23 @@
             "email": "misaki1964@gmail.com"
         }
     ],
-        "config": {
+    "config": {
         "vendor-dir": "Vendor"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git://github.com/sizuhiko/Bdd.git"
+        }
+    ],
     "require": {
         "cakephp/cakephp": "2.8.*",
         "josegonzalez/cakephp-environments": "1.0.0"
+    },
+    "require-dev": {
+        "pear/console_commandline": "@dev",
+        "pear/pear_exception": "@dev",
+        "sizuhiko/Bdd": "dev-master",
+        "behat/mink-goutte-driver": "*"
     }
 }
