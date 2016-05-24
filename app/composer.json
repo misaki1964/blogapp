@@ -18,12 +18,14 @@
     "require": {
         "cakephp/cakephp": "2.8.*",
         "josegonzalez/cakephp-environments": "1.0.0",
-        "cakedc/migrations": "~2.3"
+        "cakedc/migrations": "~2.3",
+        "guzzle/guzzle": "~3.9"
     },
     "require-dev": {
         "pear/console_commandline": "@dev",
         "pear/pear_exception": "@dev",
         "sizuhiko/Bdd": "dev-master",
-        "behat/mink-goutte-driver": "*"
+        "behat/mink-goutte-driver": "*",
+        "sizuhiko/fabricate": "1.*"
     }
 }
