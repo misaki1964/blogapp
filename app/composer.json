@@ -19,7 +19,9 @@
         "cakephp/cakephp": "2.8.*",
         "josegonzalez/cakephp-environments": "1.0.0",
         "cakedc/migrations": "~2.3",
-        "guzzle/guzzle": "~3.9"
+        "guzzle/guzzle": "~3.9",
+        "fzaninotto/faker": "1.4.*",
+        "slywalker/boost_cake": "*"
     },
     "require-dev": {
         "pear/console_commandline": "@dev",
