@@ -6,6 +6,8 @@ App::uses('AppModel', 'Model');
  */
 class Post extends AppModel {
 
+	public $displayField = 'title';
+
 /**
  * Validation rules
  *
@@ -24,17 +26,6 @@ class Post extends AppModel {
 			'maxLength' => array(
 				'rule' => ['maxLength', '255'],
 				'message' => 'タイトルは255文字以内で入力してください',
-			),
-
-		),
-		'body' => array(
-			'notBlank' => array(
-				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
 	);

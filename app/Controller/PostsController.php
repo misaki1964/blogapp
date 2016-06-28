@@ -22,7 +22,11 @@ class PostsController extends AppController {
 // ここまで
 
 
-	public function index() {
+	public function index() {						// 追加
+		$this->Paginator->settings = [				// 追加
+			'limit' => 5,							// 追加
+			'order' => ['Post.id' => 'desc'],		// 追加
+		];											// 追加
 		$this->set('posts', $this->Paginator->paginate());
 	}
 
